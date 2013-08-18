@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+include_directories("${PROJECT_SOURCE_DIR}/include/")
 add_executable(pololu_driver src/pololu_driver.cpp)
 target_link_libraries(pololu_driver usb-1.0)
