@@ -1,6 +1,6 @@
 #include <iostream>
 #include <libusb-1.0/libusb.h>
-#include "protocol.h"
+#include "pololu_driver/protocol.h"
 
 using namespace std;
 
@@ -45,7 +45,7 @@ int main()
     while(1)
     {
         int position;
-        int servo=0;
+        int servo=12;
         cout << "Enter position: ";
         cin >> position;
         setTarget(position, servo);
